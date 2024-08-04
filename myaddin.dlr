@@ -1,0 +1,11 @@
+[DLSimRunSpace]
+
+[Breakpoint]
+File=C:\Documents and Settings\Administrator\Desktop\myaddin\myaddin\myaddin.c
+Line=34
+Flags=00001012
+
+[Breakpoint]
+File=C:\Documents and Settings\Administrator\Desktop\myaddin\myaddin\myaddin.c
+Line=135
+Flags=00001012

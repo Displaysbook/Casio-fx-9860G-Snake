@@ -1,0 +1,330 @@
+Hitachi Optimizing Linkage Editor (Ver. 7.1.03.000)21-Jul-2024 14:15:11
+
+*** Options ***
+
+-subcommand=C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\hmk1DC.tmp
+sdebug
+rom D=R
+nomessage
+list "C:\Documents and Settings\Administrator\Desktop\myaddin\myaddin\Debug\FXADDINror.map"
+nooptimize
+show symbol
+start P_TOP,P,C,D,C$VTBL,C$INIT/0300200,B_BR_Size,B,R/08100000
+fsymbol P
+nologo
+input "C:\Documents and Settings\Administrator\Desktop\myaddin\myaddin\Debug\myaddin.obj"
+input "C:\Documents and Settings\Administrator\Desktop\fx-9860G SDK\OS\FX\lib\setup.obj"
+library "C:\Documents and Settings\Administrator\Desktop\fx-9860G SDK\OS\FX\lib\fx9860G_library.lib"
+library "C:\Documents and Settings\Administrator\Desktop\fx-9860G SDK\OS\FX\lib\Standard_Library.lib"
+output "C:\Documents and Settings\Administrator\Desktop\myaddin\myaddin\Debug\FXADDINror.abs"
+-nomessage=1100
+end
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+
+P_TOP
+                                  00300200  0030020b         c   4
+P
+                                  0030020c  00300ecf       cc4   4
+C
+                                  00300ed0  00300ef7        28   4
+D
+                                  00300ef8  00300f0b        14   4
+B_BR_Size
+                                  08100000  08100003         4   4
+B
+                                  08100004  0810019f       19c   4
+R
+                                  081001a0  081001b3        14   4
+
+*** Symbol List ***
+
+SECTION=
+FILE=                               START        END    SIZE
+  SYMBOL                            ADDR        SIZE    INFO      COUNTS  OPT
+
+SECTION=P_TOP
+FILE=C:\Documents and Settings\Administrator\Desktop\myaddin\myaddin\Debug\myaddin.obj
+                                  00300200  0030020b         c
+  _InitializeSystem
+                                  00300200         c   func ,g         * 
+
+SECTION=P
+FILE=C:\Documents and Settings\Administrator\Desktop\myaddin\myaddin\Debug\myaddin.obj
+                                  0030020c  00300873       668
+  _Bkey_n_IsKeyDown
+                                  0030020c        7c   func ,g         * 
+  _AddIn_main
+                                  00300288       1e4   func ,g         * 
+  _InitializeGame
+                                  0030046c        70   func ,g         * 
+  _Draw
+                                  003004dc        6e   func ,g         * 
+  _Update
+                                  0030054a       140   func ,g         * 
+  _PlaceFood
+                                  0030068a       118   func ,g         * 
+  _CheckCollision
+                                  003007a2        84   func ,g         * 
+  _GameOver
+                                  00300826        4e   func ,g         * 
+FILE=C:\Documents and Settings\Administrator\Desktop\fx-9860G SDK\OS\FX\lib\setup.obj
+                                  00300874  0030098f       11c
+  ___LINK_PROTECT
+                                  00300874         4   func ,g         * 
+  _SetQuitHandler
+                                  00300878         6   func ,g         * 
+  _OnAppCloseDefault
+                                  0030087e        54   func ,g         * 
+  __INITSCT_ADDIN
+                                  003008d2        48   func ,g         * 
+  _INIT_ADDIN_APPLICATION
+                                  0030091a        76   func ,g         * 
+FILE=rand
+                                  00300990  003009bb        2c
+  _rand
+                                  00300990        2c   func ,g         * 
+FILE=_Bdel_cychdr
+                                  003009bc  003009cb        10
+  _Bdel_cychdr
+                                  003009bc         0   none ,g         * 
+FILE=_Bdisp_AllClr_DDVRAM
+                                  003009cc  003009db        10
+  _Bdisp_AllClr_DDVRAM
+                                  003009cc         0   none ,g         * 
+FILE=_Bdisp_PutDisp_DD
+                                  003009dc  003009eb        10
+  _Bdisp_PutDisp_DD
+                                  003009dc         0   none ,g         * 
+FILE=_BfileFLS_CloseFile
+                                  003009ec  003009fb        10
+  _BfileFLS_CloseFile
+                                  003009ec         0   none ,g         * 
+FILE=_Bkey_GetKeyWait
+                                  003009fc  00300a0b        10
+  _Bkey_GetKeyWait
+                                  003009fc         0   none ,g         * 
+FILE=_Bkey_Set_RepeatTime_Default
+                                  00300a0c  00300a1b        10
+  _Bkey_Set_RepeatTime_Default
+                                  00300a0c         0   none ,g         * 
+FILE=_CallbackAtQuitMainFunction
+                                  00300a1c  00300a2b        10
+  _CallbackAtQuitMainFunction
+                                  00300a1c         0   none ,g         * 
+FILE=_flsFindClose
+                                  00300a2c  00300a3b        10
+  _flsFindClose
+                                  00300a2c         0   none ,g         * 
+FILE=_GLibAddinAplExecutionCheck
+                                  00300a3c  00300a4b        10
+  _GLibAddinAplExecutionCheck
+                                  00300a3c         0   none ,g         * 
+FILE=_Hmem_SetMMU
+                                  00300a4c  00300a5b        10
+  _Hmem_SetMMU
+                                  00300a4c         0   none ,g         * 
+FILE=_Print
+                                  00300a5c  00300a6b        10
+  _Print
+                                  00300a5c         0   none ,g         * 
+FILE=dispbios
+                                  00300a6c  00300be1       176
+  _PrintMini
+                                  00300a6c        1c   func ,g         * 
+  _locate
+                                  00300a88        28   func ,g         * 
+  _Bdisp_ReadArea_DD
+                                  00300ab0       132   func ,g         * 
+FILE=timer
+                                  00300be4  00300ce3       100
+  _GetSDKLibraryVersion
+                                  00300be4         6   func ,g         * 
+  _SetTimer
+                                  00300bea        54   func ,g         * 
+  _KillTimer
+                                  00300c3e        44   func ,g         * 
+  _Sleep
+                                  00300c82        62   func ,g         * 
+FILE=__divls
+                                  00300ce4  00300d97        b4
+  __divls
+                                  00300ce4         0   none ,g         * 
+  divls_zero
+                                  00300d82         0   none ,l         * 
+  A_errno
+                                  00300d90         0   none ,l         * 
+  n_zerono
+                                  00300d94         0   none ,l         * 
+FILE=__modls
+                                  00300d98  00300e5f        c8
+  __modls
+                                  00300d98         0   none ,g         * 
+  modls_L
+                                  00300e3e         0   none ,l         * 
+  modls_zero
+                                  00300e4a         0   none ,l         * 
+  A_errno
+                                  00300e58         0   none ,l         * 
+  n_zerono
+                                  00300e5c         0   none ,l         * 
+FILE=_Bcre_cychdr
+                                  00300e60  00300e6f        10
+  _Bcre_cychdr
+                                  00300e60         0   none ,g         * 
+FILE=_BSrl_DummyWAIT
+                                  00300e70  00300e7f        10
+  _BSrl_DummyWAIT
+                                  00300e70         0   none ,g         * 
+FILE=_Bsta_cychdr
+                                  00300e80  00300e8f        10
+  _Bsta_cychdr
+                                  00300e80         0   none ,g         * 
+FILE=_Bstp_cychdr
+                                  00300e90  00300e9f        10
+  _Bstp_cychdr
+                                  00300e90         0   none ,g         * 
+FILE=_DD_GET
+                                  00300ea0  00300eaf        10
+  _DD_GET
+                                  00300ea0         0   none ,g         * 
+FILE=_locate
+                                  00300eb0  00300ebf        10
+  _locate_OS
+                                  00300eb0         0   none ,g         * 
+FILE=_PrintMiniSd
+                                  00300ec0  00300ecf        10
+  _PrintMiniSd
+                                  00300ec0         0   none ,g         * 
+
+SECTION=C
+FILE=addin_sct
+                                  00300ee4  00300ef7        14
+  _B_BGN
+                                  00300ee4         0   none ,g         * 
+  _B_END
+                                  00300ee8         0   none ,g         * 
+  _R_BGN
+                                  00300eec         0   none ,g         * 
+  _R_END
+                                  00300ef0         0   none ,g         * 
+  _D_ROM
+                                  00300ef4         0   none ,g         * 
+
+SECTION=B_BR_Size
+FILE=C:\Documents and Settings\Administrator\Desktop\myaddin\myaddin\Debug\myaddin.obj
+                                  08100000  08100003         4
+  _BR_Size
+                                  08100000         4   data ,g         * 
+
+SECTION=B
+FILE=C:\Documents and Settings\Administrator\Desktop\myaddin\myaddin\Debug\myaddin.obj
+                                  08100004  0810019b       198
+  _snake
+                                  08100004       190   data ,g         * 
+  _food
+                                  08100194         8   data ,g         * 
+FILE=_errno
+                                  0810019c  0810019f         4
+  __errno
+                                  0810019c         4   data ,g         * 
+
+SECTION=R
+FILE=C:\Documents and Settings\Administrator\Desktop\myaddin\myaddin\Debug\myaddin.obj
+                                  081001a0  081001ab         c
+  _snake_length
+                                  081001a0         4   data ,g         * 
+  _direction
+                                  081001a4         4   data ,g         * 
+  _food_exists
+                                  081001a8         4   data ,g         * 
+FILE=C:\Documents and Settings\Administrator\Desktop\fx-9860G SDK\OS\FX\lib\setup.obj
+                                  081001ac  081001af         4
+  _gb_OnAppClose
+                                  081001ac         4   data ,g         * 
+FILE=_rnext
+                                  081001b0  081001b3         4
+  __rnext
+                                  081001b0         4   data ,g         * 
+
+Absolute value symbols
+FILE=_Bdel_cychdr
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Bdisp_AllClr_DDVRAM
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Bdisp_PutDisp_DD
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_BfileFLS_CloseFile
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Bkey_GetKeyWait
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Bkey_Set_RepeatTime_Default
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_CallbackAtQuitMainFunction
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_flsFindClose
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_GLibAddinAplExecutionCheck
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Hmem_SetMMU
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Print
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=__divls
+  zerodiv
+                                  0000044e         0   none ,l         * 
+FILE=__modls
+  zerodiv
+                                  0000044e         0   none ,l         * 
+FILE=_Bcre_cychdr
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_BSrl_DummyWAIT
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Bsta_cychdr
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_Bstp_cychdr
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_DD_GET
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_locate
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+FILE=_PrintMiniSd
+  __JumpTableTOP
+                                  80010070         0   none ,l         * 
+
+*** Delete Symbols ***
+
+SYMBOL                                SIZE    INFO
+
+*** Variable Accessible with Abs8 ***
+
+SYMBOL                                SIZE    COUNTS  OPTIMIZE
+
+*** Variable Accessible with Abs16 ***
+
+SYMBOL                                SIZE    COUNTS  OPTIMIZE
+
+*** Function Call ***
+
+SYMBOL                              COUNTS  OPTIMIZE
